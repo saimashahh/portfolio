@@ -2,91 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-       <title>Saima Portfolio</title>
-       <meta name="viewport" content="width=device-width,initial-scale=1.0">
-       <meta name="author" content="Saima Shah">
-       <meta name="description" content="UX Design UX Research UX Writing Product Design Blog UX Design Portfolio">
-       </head>
+    <title>Saima Portfolio Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Saima Shah">
+    <meta name="description" content="UX Design UX Research UX Writing Product Design Blog UX Design Portfolio">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
 <body>
- <!--for the header-->
- <header>
-  <div>
-    <img src="img/logo_puzzle.png" alt="Saima Shah"></div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Work</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-    <main>
-      <!--for the hero section-->
-      <div>
+    <!-- Header Section -->
+    <header id="header">
         <div>
-    
-      <h1> Hello, my name is Saima Shah </h1>
-      <span>  I'm a UX Designer who loves to make strategic designs that users love to use! </span>
-      <p> tbd    </p>
-     </div>
-    </div>
-    <!--Work projects-->
-      
-
-        <div><h2>My Work</h2>
+            <img class="logo" src="img/logo_puzzle.png" alt="Saima Shah">
         </div>
-        <!--Project One-->
-        <div> <!-- open row that holds 2 columns for project -->
-          <div> <!-- open first column (used for image) -->
-            <picture>
-              <source srcset="img/plutoPayimages/pluto_pay600px" media="(max-width:767px)">
-              <img src="img/plutoPayimages/pluto_pay_800px.png" alt="Pluto Pay">
-            </picture>
-          </div> <!-- end first column -->
-          <div> <!-- open second column (used for text) -->
-            <h3>Pluto Pay</h3>
-            <p>PlutoPay is a financial payments app...</p>
-            <p>Skills used included Research, Design, Writing, and Interviewing...</p>
-            <a href="plutopay.html">Read more</a>
-          </div> <!-- end second column -->
-       </div> <!-- end row that holds 2 columns for project -->
-      
-  
-      <!--Project two-->
-      <div><!-- open row that holds (2) columns for project -->
-        <div><!-- open first column (used for image) -->
-          <picture>
-            <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
-            <img src="http://via.placeholder.com/1200x800" alt="My Image">
-          </picture>
-        </div><!-- end first column -->
-        <div><!-- open second column (used for text) -->
-          <h3>Project two</h3><!-- heading for the project -->
-          <p><!-- open paragraph -->
-          Placeholder text tbd
-          </p><!-- end paragraph -->
-          <p><!-- open paragraph -->
-            Placeholder for text tbd
-          </p><!-- end paragraph -->
-          <a href="#">Read more</a><!-- button or link label -->
-        </div><!-- end second column -->
-      </div><!-- end row that holds (2) columns for project -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  </main> 
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div>
+                <h1>Hello, my name is Saima Shah</h1>
+                <span>I'm a UX Designer who loves to make strategic designs that users love to use!</span>
+                <p>tbd</p>
+            </div>
+        </section>
 
-<footer id="contact"><!--For the footer-->      
-      <h2>Get in Touch</h2>
-      <p>Do you like my work and want to discuss opportunities? Please get in touch.</p>
-      <p> Send me an email</p>
-      <div>
-        <a href="mailto:88SaimaShah88@gmail.com">Email me</a>
-      </div>
-      <!--Social Media Layout and Placeholders-->
-      <a href="https://www.linkedin.com/in/saimas/" target="_blank">
-        <img src="img/linkedin_icon.png" alt="LinkedIn">
-    </a>
+        <!-- My Work Section -->
+        <section id="my-work">
+            <h2>My Work</h2>
 
-      <p> Copyright Saima Shah 2024. All rights reserved</p>
+            <!-- Project One -->
+            <div class="project">
+                <div class="project-image">
+                    <picture>
+                        <source srcset="img/plutoPayimages/pluto_pay600px" media="(max-width:767px)">
+                        <img src="img/plutoPayimages/pluto_pay_800px.png" alt="Pluto Pay">
+                    </picture>
+                </div>
+                <div class="project-description">
+                    <h3>Pluto Pay</h3>
+                    <p>PlutoPay is a financial payments app...</p>
+                    <p>Skills used included Research, Design, Writing, and Interviewing...</p>
+                    <a href="plutopay.html" class="button">Read more</a>
+                </div>
+            </div>
+
+            <!-- Project Two -->
+            <div class="project">
+                <div class="project-image">
+                    <picture>
+                        <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
+                        <img src="http://via.placeholder.com/1200x800" alt="My Image">
+                    </picture>
+                </div>
+                <div class="project-description">
+                    <h3>Project Two</h3>
+                    <p>Placeholder text tbd</p>
+                    <p>Placeholder for text tbd</p>
+                    <a href="tbd" class="button">Read more</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <h2>Get in Touch</h2>
+        <p>Do you like my work and want to discuss opportunities? Please get in touch.</p>
+        <p>Send me an email</p>
+        <div>
+            <a class="button" href="mailto:88SaimaShah88@gmail.com">Email me</a>
+        </div>
+        <!-- Social Media Layout and Placeholders -->
+        <a href="https://www.linkedin.com/in/saimas/" target="_blank">
+            <img class="logo" src="img/linkedin_icon.png" alt="LinkedIn">
+        </a>
+        <p>Copyright Saima Shah 2024. All rights reserved</p>
     </footer>
 </body>
 </html>

@@ -1,0 +1,35 @@
+/* 
+Colors used:
+Background Color (Light blue): #C7DDCC;
+Secondary Color (Turquoise): #75C9B7;
+Accent Color 1 (Yellow): #FFE26A;
+Accent Color 2 (Light green): #ABD699;
+Text (Black): #16123F;
+*/
+
+img {
+  width: 100%;
+}
+.logo {
+
+width: auto;
+}
+/* Button Styles */
+a.button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #FFE26A; /* Bright Yellow */
+  color: #16123F; /* Black Text */
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+a.button:hover {
+  background-color: #75C9B7; /* Turquoise Background on Hover */
+  color: #FFE26A; /* Yellow Text on Hover */
+  transform: scale(1.05); /* Slight scaling effect */
+}
