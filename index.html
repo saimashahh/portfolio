@@ -17,7 +17,10 @@
     <header id="header">
         <div>
             <img class="logo" src="img/logo_puzzle.png" alt="Saima Shah">
+            <div class="shadow-box"> <!-- This is a box with a drop shadow -->
+            </div>
         </div>
+        
         <nav>
             <ul>
                 <li><a href="index.html">Work</a></li>
@@ -26,26 +29,30 @@
             </ul>
         </nav>
     </header>
-
     <main>
+        
         <!-- Hero Section -->
         <section id="hero">
-            <div>
-                <h1>Hello, my name is Saima Shah</h1>
-                <span>I'm a UX Designer who loves to make strategic designs that users love to use!</span>
-                <p>tbd</p>
-            </div>
+            <div class="container"></div>
+                       <div id="hero">
+                <h1> Hello, Welcome to My Portfolio</h1>
+                <h3>I'm a UX Designer who makes strategic designs that users love to use!</h3>
+             </div>
         </section>
 
         <!-- My Work Section -->
         <section id="my-work">
-            <h2>My Work</h2>
+            <div id="work"> <!---work section-- open row that holds (2) columns for project -->
+             <div class="container">
+                <div class="row">
+                    <h2>My Work</h2>
+                                          
 
             <!-- Project One -->
             <div class="project">
                 <div class="project-image">
                     <picture>
-                        <source srcset="img/plutoPayimages/pluto_pay600px" media="(max-width:767px)">
+                        <source srcset="img/plutoPayimages/pluto_pay_600px.png" media="(max-width:767px)">
                         <img src="img/plutoPayimages/pluto_pay_800px.png" alt="Pluto Pay">
                     </picture>
                 </div>
@@ -53,7 +60,8 @@
                     <h3>Pluto Pay</h3>
                     <p>PlutoPay is a financial payments app...</p>
                     <p>Skills used included Research, Design, Writing, and Interviewing...</p>
-                    <a href="plutopay.html" class="button">Read more</a>
+                    <a href="plutopay.html" class="button">Read more </a>
+
                 </div>
             </div>
 
@@ -77,16 +85,20 @@
 
     <!-- Footer Section -->
     <footer id="contact">
+      <div class="container">
+        <div class="footer">
+       
         <h2>Get in Touch</h2>
         <p>Do you like my work and want to discuss opportunities? Please get in touch.</p>
-        <p>Send me an email</p>
-        <div>
+        <p>Send me an email Or connect on Linked In</p>             
             <a class="button" href="mailto:88SaimaShah88@gmail.com">Email me</a>
-        </div>
-        <!-- Social Media Layout and Placeholders -->
-        <a href="https://www.linkedin.com/in/saimas/" target="_blank">
-            <img class="logo" src="img/linkedin_icon.png" alt="LinkedIn">
-        </a>
+<!-- Social Media Layout and Placeholders -->
+        <div class="social-buttons"> 
+ <a href="https://www.linkedin.com/in/saimas/" target="_blank"> class="linkedin">
+<img src="img/LI-Logo.png" alt="LinkedIn">
+ </a>
+</div> 
+      
         <p>Copyright Saima Shah 2024. All rights reserved</p>
     </footer>
 </body>

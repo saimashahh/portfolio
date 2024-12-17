@@ -1,18 +1,131 @@
 /* 
 Colors used:
-Background Color (Light blue): #C7DDCC;
+Background Color (Light blue-green): #C7DDCC;
 Secondary Color (Turquoise): #75C9B7;
 Accent Color 1 (Yellow): #FFE26A;
 Accent Color 2 (Light green): #ABD699;
 Text (Black): #16123F;
 */
 
+/*default body settings*/
+
+body {
+  background-color: #C7DDCC;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #16123F;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+
+/* Header styling */
+header {
+  background-color: #c7ddcc;
+  text-align: center;
+  padding: 10px 0;
+  width: [object Object]px; 
+	height: [object Object]px; 
+	background: #C7DDCC; 
+	border: solid #75C9B7 0; 
+	box-shadow: 5px 5px 16px rgba(255, 225, 106, 0.6)  ; 
+	-webkit-box-shadow: 5px 5px 16px rgba(255, 225, 106, 0.6)  ;
+	-moz-box-shadow: 5px 5px 16px rgba(255, 225, 106, 0.6)  ; 
+  position: relative;
+}
+
+/* Navigation menu styling */
+nav > ul {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Align items in a horizontal line */
+  justify-content: center; /* Center the navigation menu */
+}
+
+/* Navigation list items */
+nav > ul > li {
+  display: inline-block; /* Inline block for horizontal layout */
+}
+
+/* Links inside the navigation */
+nav > ul > li > a {
+  padding: 0px 15px; /* Padding for spacing around links */
+  text-transform: uppercase; /* Make text uppercase */
+  font-weight: 700; /* Bold text */
+  text-decoration: none; /* Remove underline */
+  color: #16123F; /* Default link color */
+}
+
+/* Hover state for links */
+nav > ul > li > a:hover {
+  color: #ffffff; /* Text color on hover */
+  background-color: #75C9B7; /* Background color on hover */
+}
+a {
+  color: #16123F;
+  text-decoration: none; /* No underlining */
+}
+/* Visited links styling */
+nav > ul > li > a:visited {
+  color: #75C9B7; /* Visited links are turquoise */
+}
+a:hover {
+  color:#FFE26A;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+/*set the visited and active states of your links*/
+
+a:visited { /* visited link */
+  color: #75C9B7;
+}
+a:active { /* selected link */
+  color: #cc5500;
+}
+/*Pseudo classes for Accessibility for Across the Web*/
+a:hover,
+a:focus {
+  color: #cc5500;
+  text-decoration: underline;
+}
+
+/*setting images to full-width*/
 img {
-  width: 100%;
+width: 100%;
 }
 .logo {
+max-width: 250px; 
+}
 
-width: auto;
+/* Layout styling */
+
+.container {
+  padding: 10px 15px;
 }
 /* Button Styles */
 a.button {
@@ -33,3 +146,48 @@ a.button:hover {
   color: #FFE26A; /* Yellow Text on Hover */
   transform: scale(1.05); /* Slight scaling effect */
 }
+/*button class hover and active state*/
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button:active {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+/*hero styling*/
+#hero {
+      background-color: #C7DDCC; 
+      text-align: center;     /* center text */
+      padding: 20px 0; 
+      display:block;
+      width: 100%;
+}
+   
+#work.row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+
+main {
+  padding-top: 95px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  background-color:#75C9B7;
+  color: #cc5500;
+  text-align: center;
+  }
+.social-buttons a { 
+  display: inline-block; 
+  margin: 0 5px; 
+  width: 130px; 
+  height: 50px; 
+  line-height: 30px; 
+  text-align: center; 
+  justify-content:center
+  border-radius: 0; 
+  transition: all 0.3s ease-in-out; 
+} 
