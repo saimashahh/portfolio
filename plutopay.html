@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PlutoPay Case Study</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Saima Shah">
     <meta name="description" content="UX Design Portfolio">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css"> 
+    <title>PlutoPay Case Study</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 <body>
     <!-- Header -->
     <header id="header">
-        <div>
+        <div class="logo-container">
             <img class="logo" src="img/logo_screen.png" alt="Saima Shah - UX Designer Logo">
             <nav>
                 <ul>
@@ -30,10 +30,8 @@
     <main>
         <!-- Hero Section -->
         <section id="hero">
-          <div id="hero"></div>
             <h1>PlutoPay Case Study</h1>
-            <p>Welcome to the UX Design Portfolio for the PlutoPay Project</p> 
-    
+            <p>Welcome to the UX Design Portfolio for the PlutoPay Project</p>
             <picture>
                 <source srcset="img/plutoPayimages/design_thinking_usercentric.png" media="(max-width: 767px)">
                 <img src="img/plutoPayimages/design_thinking_usercentric.png" alt="Pluto Pay">
@@ -44,25 +42,23 @@
         <section id="problem">
             <h1>The Problem</h1>
             <p>
-                Competitive analysis and secondary research showed that even though the financial app market was quite saturated with fintech apps, 
-                there was limited understanding regarding user lifestyles and needs of a large user niche: 'Digital nomads' in the age range of 19-40, 
-                who travel the world for work and study.
+                Competitive analysis and research showed that while the financial app market is saturated, it lacks products catering to 'Digital nomads' (19-40 years old).
             </p>
             <ul>
-                <li>Digital nomads need to exchange currency quickly and efficiently.</li>
-                <li>They need to make payments in multiple currencies.</li>
-                <li>Budget and financial management is challenging because of exchange rate variability, wi-fi issues, travel, language, security, and differences in time zones.</li>
+                <li>Need to exchange currency quickly and efficiently.</li>
+                <li>Payments in multiple currencies.</li>
+                <li>Challenges include exchange rate variability, travel issues, language barriers, and security concerns.</li>
             </ul>
             <h3>
-                Users need an efficient and secure online payment product that they can use to shop, travel, send money, and manage their budget easily and intuitively.
+                Users need an efficient and secure online payment solution for shopping, travel, money transfers, and budget management.
             </h3>
             <picture>
                 <source srcset="img/plutoPayimages/paypal_swot600px.png" media="(max-width: 767px)">
-                <img src="img/plutoPayimages/paypal_swot1200px.png" alt="PayPal SWOT">
+                <img src="img/plutoPayimages/paypal_swot1200px.png" alt="PayPal SWOT Analysis">
             </picture>
             <picture>
                 <source srcset="img/plutoPayimages/wise_swot600px.png" media="(max-width: 767px)">
-                <img src="img/plutoPayimages/wise_swot1200px.png" alt="Wise SWOT">
+                <img src="img/plutoPayimages/wise_swot1200px.png" alt="Wise SWOT Analysis">
             </picture>
         </section>
 
@@ -70,9 +66,7 @@
         <section id="process">
             <h1>The Process</h1>
             <p>
-                The process for developing the product started with user research and persona development. Relevant user stories guided user flows and the site map. 
-                This was tested with users in the demographic and psychographic range relevant to the problem. Testing methods included card sorting, user interviews, 
-                affinity mapping, and preference testing. During the iterative design process, wireframes evolved from low-fidelity to high-fidelity designs.
+                The product development process included user research, persona creation, and iterative testing. Tools included card sorting, user interviews, affinity mapping, and wireframe design.
             </p>
             <picture>
                 <source srcset="img/plutoPayimages/persona_mike.png" media="(max-width: 767px)">
@@ -104,15 +98,15 @@
             <h3>User Flows</h3>
             <picture>
                 <source srcset="img/plutoPayimages/userflow_onboarding.png" media="(max-width: 767px)">
-                <img src="img/plutoPayimages/userflow_onboarding.png" alt="User Flow Onboarding">
+                <img src="img/plutoPayimages/userflow_onboarding.png" alt="User Flow - Onboarding">
             </picture>
             <picture>
                 <source srcset="img/plutoPayimages/userflow_money_transfer.png" media="(max-width: 767px)">
-                <img src="img/plutoPayimages/userflow_money_transfer.png" alt="User Flow Money Transfer">
+                <img src="img/plutoPayimages/userflow_money_transfer.png" alt="User Flow - Money Transfer">
             </picture>
             <picture>
                 <source srcset="img/plutoPayimages/user_flow_budget.png" media="(max-width: 767px)">
-                <img src="img/plutoPayimages/user_flow_budget.png" alt="User Flow Budget">
+                <img src="img/plutoPayimages/user_flow_budget.png" alt="User Flow - Budget Management">
             </picture>
         </section>
 
@@ -127,25 +121,24 @@
         </section>
     </main>
 
-    <!-- Footer Section -->
-  <!-- Footer Section -->
-  <footer id="contact">
-    <div class="container">
-      <div class="footer">
-     
-      <h2>Get in Touch</h2>
-      <p>Do you like my work and want to discuss opportunities? Please get in touch.</p>
-      <p>Send me an email Or connect on Linked In</p>             
-          <a class="button" href="mailto:88SaimaShah88@gmail.com">Email me</a>
-<!-- Social Media Layout and Placeholders -->
-      <div class="social-buttons"> 
-<a href="https://www.linkedin.com/in/saimas/" target="_blank"> class="linkedin">
-<img src="img/LI-Logo.png" alt="LinkedIn">
-</a>
-</div> 
-    
-      <p>Copyright Saima Shah 2024. All rights reserved</p>
-  </footer>
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+          <div class="footer">
+         
+          <h2>Get in Touch</h2>
+          <p>Do you like my work and want to discuss opportunities? Please get in touch.</p>
+          <p>Send me an email Or connect on Linked In</p>             
+              <a class="button" href="mailto:88SaimaShah88@gmail.com">Email me</a>
+            <div class="social-buttons">
+                <a href="https://www.linkedin.com/in/saimas/" target="_blank" class="linkedin">
+                    <img src="img/LI-Logo.png" alt="LinkedIn">
+                </a>
+            </div>
+            <p>&copy; Saima Shah 2024. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
+
 
