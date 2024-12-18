@@ -8,17 +8,10 @@ Text (Black): #16123F;
 2nd Text (burnt orange): #cc5500
 */
 
-/*default body settings*/
-* {
-  box-sizing: border-box;
-}
-body {
-  background-color: #C7DDCC;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #16123F;
+
+#my-work h2 {
+  text-align: center;
+  margin: 20px 0;
 }
 
 h1, h2, h3, h4 {
@@ -33,6 +26,7 @@ h1 {
 h2 {
   font-size: 2.25em;
   font-weight: 700;
+  text-align: center;
 }
 
 h3 {
@@ -45,15 +39,12 @@ h4 {
   font-weight: 400;
 }
 
-
 /* Header styling */
 header {
   background-color: #c7ddcc;
   text-align: center;
   padding: 10px 0;
-  width: [object Object]px; 
-	height: [object Object]px; 
-	background: #C7DDCC; 
+ 	background: #C7DDCC; 
 	border: solid #75C9B7 0; 
 	box-shadow: 5px 5px 16px rgba(255, 225, 106, 0.6)  ; 
 	-webkit-box-shadow: 5px 5px 16px rgba(255, 225, 106, 0.6)  ;
@@ -62,13 +53,21 @@ header {
 }
 
 /* Navigation menu styling */
+nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;
+}
+
 nav > ul {
   list-style-type: none; /* Remove bullet points */
   margin: 0;
   padding: 0;
   display: flex; /* Align items in a horizontal line */
   justify-content: center; /* Center the navigation menu */
-}
+  }
+
+ 
 
 /* Navigation list items */
 nav > ul > li {
@@ -110,6 +109,20 @@ a:visited { /* visited link */
 a:active { /* selected link */
   color: #cc5500;
 }
+/*default body settings*/
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #C7DDCC;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #16123F;
+ 
+}
+
 /*Pseudo classes for Accessibility for Across the Web*/
 a:hover,
 a:focus {
@@ -118,18 +131,42 @@ a:focus {
 }
 
 /*setting images to full-width*/
-img {
-width: 100%;
+/* Set images to be responsive */
+.project-image img {
+  width: 100%; /* Make images fully responsive */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra space below the image */
 }
+
 .logo {
 max-width: 250px; 
 }
 
 /* Layout styling */
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of columns on smaller screens */
+  justify-content: center; /* Center align the items */
+  margin-left: -10px; /* Compensate for the padding */
+  margin-right: -10px; /* Compensate for the padding */
+}
 
 .container {
   padding: 0px 15px;
 }
+.col-md-6 {
+  flex: 0 0 50%; /* Each column takes up 50% of row width */
+  max-width: 100%;
+  padding: 10px; /* Inner padding for columns */
+  
+}
+
+[class^="col-"] {
+  flex: 1 1 100%; /* Allow them to shrink and grow */
+  max-width: 100%; /* Ensure they are responsive */
+  padding: 10px; /* Add padding inside the columns */
+}
+
 /* Button Styles */
 a.button {
   display: inline-block;
@@ -140,25 +177,27 @@ a.button {
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  border-radius: 10px;
-  transition: all 0.3s ease;
+  border-bottom: 2px solid #cc5500; /* Added missing semicolon */
+  border-radius: 3px;
+  transition: opacity 0.2s, background-color 0.5s, font-size 0.4s; /* Specified property transitions */
 }
 
 a.button:hover {
   background-color: #75C9B7; /* Turquoise Background on Hover */
   color: #FFE26A; /* Yellow Text on Hover */
   transform: scale(1.05); /* Slight scaling effect */
-}
-/*button class hover and active state*/
-.button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
+  opacity:0.8; /*button class hover and active state*/
+  text-decoration:none ;
+  cursor: pointer;
+  opacity: 0.8;
+  font-size:20px;
 }
 
 .button:active {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
 /*hero styling*/
 #hero {
       background-color: #C7DDCC; 
@@ -167,12 +206,22 @@ a.button:hover {
       display:block;
       width: 100%;
 }
-   
-#work.row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+#hero span {
+  display: block;
+}
+#work.row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; 
+  text-align: center; 
+}
 
 main {
   padding-top: 95px;
 }
+
+[class^="col-"] {
+  float: left;
+  padding: 10px;
+}
+
 .footer {
   position: relative;
   margin:0 5px;
@@ -186,17 +235,63 @@ main {
 .social-buttons { 
   display: flex; 
   justify-content: center;
-  align-items:center
+  align-items: center;
 }
 .social-buttons a {
   display: inline-block;
   margin: 10px 5px;
-  width: 120px;
+  width: 100px;
   height: 50px;
   text-align: center;
-  line-height: center;
-  border-radius: 5px;
+  line-height: 40px;
+  border-radius: 10%;
+  overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
+.social-buttons a img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensures image scales properly */
+}
+
+/* Default (for small screens) */
+.row .col-12 {
+  width: auto; /* Full width on small screens */
+}
+/* Adjust for medium screens */
+@media only screen and (min-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 50%; /* 50% width on medium screens */
+    max-width: 50%;
+  }
+  header {
+    text-align: unset;
   
- 
+  }
+}
+
+
+/* Adjust for larger screens */
+@media only screen and (min-width: 1024px) {
+  .col-lg-4 {
+    flex: 0 0 33.33%; /* 33.33% width on larger screens */
+    max-width: 33.33%;
+  }
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.purplysu_image{ 
+width: auto;
+max-width: 100%;
+height: auto;
+}
+@keyframes color-change {
+  from {fill:#0e9055;}
+  to {fill:#6B3E85}
+}
+.hair {
+  animation: 4s color-change infinite alternate linear;
+}
