@@ -1,13 +1,18 @@
 /* 
 Colors used:
 Background Color (Light blue-green): #C7DDCC;
-Secondary Color (Turquoise): #75C9B7;
+Secondary Color (Turquoise): #75C9B7 or #A4DBCC;
 Accent Color 1 (Yellow): #FFE26A;
 Accent Color 2 (Light green): #ABD699;
 Text (Black): #16123F;
 2nd Text (burnt orange): #cc5500
+Header menu (very dark orange): #662C00
 */
-
+.container { 
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 #my-work h2 {
   text-align: center;
@@ -40,17 +45,6 @@ h4 {
 }
 
 /* Header styling */
-header {
-  background-color: #c7ddcc;
-  text-align: center;
-  padding: 10px 0;
- 	background: #C7DDCC; 
-	border: solid #75C9B7 0; 
-	box-shadow: 5px 5px 16px rgba(255, 225, 106, 0.6)  ; 
-	-webkit-box-shadow: 5px 5px 16px rgba(255, 225, 106, 0.6)  ;
-	-moz-box-shadow: 5px 5px 16px rgba(255, 225, 106, 0.6)  ; 
-  position: relative;
-}
 
 /* Navigation menu styling */
 nav {
@@ -59,42 +53,49 @@ nav {
   margin-top: 4px;
 }
 
+.logo {
+align-items: center;
+}
+
 nav > ul {
-  list-style-type: none; /* Remove bullet points */
-  margin: 0;
-  padding: 0;
-  display: flex; /* Align items in a horizontal line */
-  justify-content: center; /* Center the navigation menu */
-  }
-
- 
-
-/* Navigation list items */
-nav > ul > li {
-  display: inline-block; /* Inline block for horizontal layout */
+list-style-type: none; /* Remove bullet points */
+margin: 0;
+padding: 0;
+display: flex; /* Align items in a horizontal line */
+text-align: center;
 }
 
 /* Links inside the navigation */
 nav > ul > li > a {
-  padding: 0px 15px; /* Padding for spacing around links */
-  text-transform: uppercase; /* Make text uppercase */
-  font-weight: 700; /* Bold text */
-  text-decoration: none; /* Remove underline */
-  color: #16123F; /* Default link color */
+padding: 15px 15px; /* Padding for spacing around links */
+text-transform: uppercase; /* Make text uppercase */
+font-weight: 1000; /* Bold text */
+text-decoration: none; /* Remove underline */
+color: #16123F; /* Default link color */
 }
 
-/* Hover state for links */
-nav > ul > li > a:hover {
-  color: #ffffff; /* Text color on hover */
-  background-color: #75C9B7; /* Background color on hover */
-}
+header {
+  height:auto;
+  align-items: center;
+  background-color: #c7ddcc;
+  padding: 10px 0;
+ 	background: #C7DDCC; 
+	box-shadow: 5px 5px 16px rgba(255, 225, 106, 0.6)  ; 
+	-webkit-box-shadow: 5px 5px 16px rgba(255, 225, 106, 0.6)  ;
+	-moz-box-shadow: 5px 5px 16px rgba(255, 225, 106, 0.6)  ; 
+  position: relative;
+  }
+.logo {
+  max-width: 250px; 
+  }
+
 a {
   color: #16123F;
   text-decoration: none; /* No underlining */
 }
 /* Visited links styling */
 nav > ul > li > a:visited {
-  color: #75C9B7; /* Visited links are turquoise */
+  color: #662C00; /* Visited links are burnt orange */
 }
 a:hover {
   color:#FFE26A;
@@ -104,7 +105,7 @@ a:hover {
 /*set the visited and active states of your links*/
 
 a:visited { /* visited link */
-  color: #75C9B7;
+  color: #411111;
 }
 a:active { /* selected link */
   color: #cc5500;
@@ -133,14 +134,20 @@ a:focus {
 /*setting images to full-width*/
 /* Set images to be responsive */
 .project-image img {
-  width: 100%; /* Make images fully responsive */
+  width: 100%; 
   height: auto; /* Maintain aspect ratio */
   display: block; /* Remove extra space below the image */
 }
 
-.logo {
-max-width: 250px; 
+.saima-image img {
+  width: 35%;
+  height: auto;
+  display: block;
+ float:right;
+ padding: 10px;
 }
+
+
 
 /* Layout styling */
 .row {
@@ -152,7 +159,7 @@ max-width: 250px;
 }
 
 .container {
-  padding: 0px 15px;
+padding: 5px 15px;
 }
 .col-md-6 {
   flex: 0 0 50%; /* Each column takes up 50% of row width */
@@ -214,7 +221,7 @@ a.button:hover {
 }
 
 main {
-  padding-top: 95px;
+  padding-top: 85px;
 }
 
 [class^="col-"] {
@@ -224,13 +231,14 @@ main {
 
 .footer {
   position: relative;
-  margin:0 5px;
-  bottom: 0;
-  width: 100%;
-  background-color:#75C9B7;
-  color: #cc5500;
+   width: 100%;
+  background-color:#A4DBCC;
+  color: #662C00;
   text-align: center;
-  box-sizing:border-box
+  box-sizing:border-box;
+  padding:10px;
+  border-radius:5px;
+  
 }
 .social-buttons { 
   display: flex; 
@@ -278,20 +286,27 @@ main {
     max-width: 33.33%;
   }
 }
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.purplysu_image{ 
-width: auto;
+
+.animated-cat{ 
+width: 100%;
 max-width: 100%;
 height: auto;
 }
+.cat {
+  animation-duration: 4s;
+  animation-name: cat-jump;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: vertical;
+}
+
+.screens {
+  transform: translate(-2.1rem, -2ex);
+}
 @keyframes color-change {
-  from {fill:#0e9055;}
-  to {fill:#6B3E85}
+  0% {fill:#ffffff;}
+  50% {fill:#FFE26A;}
+  100% {fill:#cc5500;}
 }
-.hair {
-  animation: 4s color-change infinite alternate linear;
-}
+
+

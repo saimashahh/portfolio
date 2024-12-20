@@ -1,106 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Saima Shah">
-    <meta name="description" content="UX Design UX Research UX Writing Product Design Blog UX Design Portfolio">
-    <title>Portfolio Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Header Section -->
-                      <header id="header">
-						<div class="container">
-							
-											   <div>
-									<img class="logo" src="img/logo_puzzle.png" alt="Saima Shah - UX Designer Logo">
-									<nav>
-										<ul>
-											<li><a href="index.html">Work</a></li>
-											<li><a href="about.html">About</a></li>
-											<li><a href="#contact">Contact</a></li>
-										</ul>
-									</nav>
-								</div>
-							</header>
-                            <div class="shadow-box">
-           
-        </nav>
-        </div>
-    </header>
-    
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="container">
-            <h1><span>Hello, Welcome to My Portfolio</span></h1>
-            <h3>I'm a UX Designer who makes strategic designs that users love to use!</h3>
-        </section>
-        
-        <!-- My Work Section -->
-        <section id="my-work" class="container">
-            <div class="row">
-                <div class="col-md-6">
-					<div class="project-image">                
-                        <picture>
-                            <source srcset="img/plutoPayimages/pluto_pay_600px.png" media="(max-width:767px)">
-                            <img src="img/plutoPayimages/pluto_pay_800px.png" alt="Pluto Pay">
-                        </picture>
-						<div class="col-md-6">
-                    </div>
-					</div>
-            
-                                      <div class="project-description">
- <h3>Pluto Pay</h3>
-                        <p>PlutoPay is a financial payments app designed for the needs of digital nomads.</p>
-                        <p>Skills used included Research, UX Design, UX Writing, and Interviewing.</p>
-                        <a href="plutopay.html" class="button">Read more</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="project-image">
-                        <picture>
-                            <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
-                            <img src="http://via.placeholder.com/1200x800" alt="Project Two">
-                        </picture>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="project-description">
-                        <h3>Project Two</h3>
-                        <p>Placeholder text tbd</p>
-                        <p>Placeholder for text tbd</p>
-                        <a href="#" class="button">Read more</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="project-image">
-                            <picture>
-                                <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
-                                <img src="http://via.placeholder.com/1200x800" alt="Project Two">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="col-md-6"> 
-                      <h3>Work From Home</h3>
-                   
-        <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 27.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg class= "animated-cat" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 2000 2000" style="enable-background:new 0 0 2000 2000;" xml:space="preserve">
 <g>
-  	
-    <!--Cat Group-->
-	<g> 
-		<g>class="cat">
+	<rect style="fill:#FFFFFF;" width="2000" height="2000"/>
+	<g>
+		<g>
 			<path style="fill:#EE6F57;" d="M1799.482,1498.306c-0.164,0-0.322,0.019-0.485,0.021l1.412-24.432h-124.29l5.99,103.651
 				c1.123,19.428,17.205,34.607,36.665,34.607h38.981c19.46,0,35.542-15.18,36.665-34.607l1.382-23.917
 				c1.21,0.114,2.435,0.185,3.68,0.185c18.145,0,32.909-12.45,32.909-27.753C1832.391,1510.756,1817.627,1498.306,1799.482,1498.306
@@ -122,7 +27,7 @@
 					c-5.214,5.864-11.979,10.357-19.39,12.134L1754.571,1435.411z"/>
 			</g>
 		</g>
-		<g>class="screens"
+		<g>
 			<path style="fill:none;stroke:#FBC343;stroke-width:3.8197;stroke-miterlimit:10;" d="M773.443,1636.826
 				c-158.722-30.734-270.829-123.215-322.868-266.474c-82.778-227.88,5.917-563.806,243.212-637.611
 				c93.977-29.229,209.384,23.113,305.93,22.401c135.605-1.001,257.55-84.217,392.259-73.608
@@ -146,7 +51,7 @@
 				<clipPath id="SVGID_00000109743789387794140510000012391310342192848303_">
 					<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
 				</clipPath>
-				<g class="color-change" style="clip-path:url(#SVGID_00000109743789387794140510000012391310342192848303_);">
+				<g style="clip-path:url(#SVGID_00000109743789387794140510000012391310342192848303_);">
 					<path style="fill:#FFEEC7;" d="M1591.962,1355.975c-42.075,121.75-92.325,241.975-267.1,288.4l-755.425-8.025
 						c-170.225-80.4-263.25-239.15-278.725-410.425c-5.125-56.6-1.775-114.6,10.1-171.55c3.1-15,6.8-29.925,11.1-44.725
 						c39.025-134.55,121.625-261.4,244.5-332.95c78.95-45.975,180.15-30.8,264-7.2c75.6,21.275,149.45,51.075,227.5,60.05
@@ -498,32 +403,4 @@
 		</g>
 	</g>
 </g>
-
 </svg>
-
-            
-                                </section>
-                            </main>
-                            
-                            <!-- Footer Section -->
-                            <footer id="contact">
-                         
-                                    <div class="footer">
-                                        
-                                        <h2>Get in Touch</h2>
-                                        <p>Do you like my work and want to discuss opportunities? Please get in touch.</p>
-                                        <p>Send me an email Or connect on Linked In</p>             
-                                        <a class="button" href="mailto:88SaimaShah88@gmail.com">Email me</a>
-                                        <div class="social-buttons">
-                                            <a href="https://www.linkedin.com/in/saimas/" target="_blank" class="linkedin">
-                                                <img src="img/LI-Logo.png" alt="LinkedIn">
-                                            </a>
-                                        </div>
-                                        <p>&copy; Saima Shah 2024. All rights reserved.</p>
-                                        </div>
-                                </div>
-                                    </div>
-                                </footer>
-                            </body>
-                            </html>
-                            
